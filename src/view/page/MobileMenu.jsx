@@ -122,7 +122,7 @@ export default function MobileDashboard() {
             className="w-20 h-20 rounded-2xl"
           />
           <button
-            onClick={() => navigate("camera")}
+            onClick={() => navigate("/camera")}
             className="w-full py-1 rounded-2xl text-[12px] bg-pink-300 text-white font-semibold hover:bg-pink-400 transition"
           >
             Camera Game
@@ -136,7 +136,7 @@ export default function MobileDashboard() {
             className="w-20 h-20 rounded-2xl object-cover"
           />
           <button
-            onClick={() => navigate("ttc")}
+            onClick={() => navigate("/ttc")}
             className="w-full py-1 rounded-2xl text-[12px] bg-pink-300 text-white font-semibold hover:bg-pink-400 transition"
           >
             TIC TAC WLE
