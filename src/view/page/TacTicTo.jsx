@@ -102,7 +102,7 @@ export default function TicTacToe() {
             {winner === "Draw"
               ? "Seri dong…"
               : winner === "X"
-              ? "Menang! Hoki yh."
+              ? "Menang Hoki yh."
               : "Kalah. Cupu km."}
           </h2>
 

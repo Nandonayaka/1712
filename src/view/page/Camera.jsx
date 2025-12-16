@@ -93,11 +93,11 @@ export default function MemeInteraction() {
             {!answer && (
               <>
                 <p className="text-sm mb-4 font-medium">
-                  Setelah melihat fotomu barusan…  
+                  Habis lat fotomu tadi..  
                   jawab jujur ya:
                   <br />
                   <span className="font-semibold">
-                    Kamu itu cakep atau emang kameranya yang jago?
+                    Kamu itu cakep atau emang kameranya aja?
                   </span>
                 </p>
 

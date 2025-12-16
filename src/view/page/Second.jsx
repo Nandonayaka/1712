@@ -16,7 +16,7 @@ export default function BirthdayCard() {
     {
       title: "Second Step ✨",
       content:
-        "Semoga jadi Orang yang Hebat dan Suksaess semoga makin sayang akuu :p",
+        "Semoga jadi Orang yang Hebat dan Suksess semoga makin sayang akuu :p",
     },
     {
       title: "Final Step 🎉",
