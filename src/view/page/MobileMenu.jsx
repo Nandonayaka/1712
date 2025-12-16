@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 export default function MobileDashboard() {
   const [typed, setTyped] = useState("");
   const navigate = useNavigate();
+  const BASE = import.meta.env.BASE_URL;
 
   useEffect(() => {
     AOS.init({ duration: 700, easing: "ease-out-quart" });
@@ -32,7 +33,7 @@ export default function MobileDashboard() {
     <div className="p-4 space-y-6 mb-20 h-screen overflow-y-auto bg-confetti">
       <style>{`
         .bg-confetti {
-          background-image: url('/img/confetti.png');
+          background-image: url('${BASE}image/confetti.png');
           background-size: cover;
           background-repeat: repeat;
         }
@@ -48,7 +49,7 @@ export default function MobileDashboard() {
       {/* Banner */}
       <div
         className="w-full h-44 rounded-3xl p-5 text-white flex justify-between shadow-xl relative overflow-hidden bg-cover bg-center"
-        style={{ backgroundImage: "url('image/boom/1.png')" }}
+        style={{ backgroundImage: `url('${BASE}image/boom/1.png')` }}
         data-aos="zoom-in"
       >
         <div>
@@ -58,7 +59,7 @@ export default function MobileDashboard() {
           <p className="text-sm opacity-90">Semoga harimu menyenangkan 🎂</p>
         </div>
         <img
-          src="/image/balon.png"
+          src={`${BASE}image/balon.png`}
           alt="balloon"
           className="h-28 w-auto object-contain opacity-95 drop-shadow-md balloon-float"
         />
@@ -87,7 +88,9 @@ export default function MobileDashboard() {
         className="bg-white rounded-2xl shadow p-5 space-y-4"
         data-aos="fade-down"
       >
-        <h3 className="text-lg font-semibold text-gray-900">Ucapan Selamat</h3>
+        <h3 className="text-lg font-semibold text-gray-900">
+          Ucapan Selamat
+        </h3>
 
         <div
           className="p-3 rounded-xl bg-pink-50 hover:bg-pink-100 transition"
@@ -101,41 +104,43 @@ export default function MobileDashboard() {
           <p className="text-xs text-gray-400 mt-1">2 menit lalu</p>
         </div>
 
-        {/* Click Button */}
         <div className="flex justify-center mt-4">
-      <button
-        className="px-6 py-3 bg-pink-400 text-white rounded-xl shadow-lg hover:bg-pink-500 active:scale-95 transition"
-        onClick={() => navigate("/success")}
-      >
-        Click Me 🎉
-      </button>
-    </div>
+          <button
+            className="px-6 py-3 bg-pink-400 text-white rounded-xl shadow-lg hover:bg-pink-500 active:scale-95 transition"
+            onClick={() => navigate("/success")}
+          >
+            Click Me 🎉
+          </button>
+        </div>
       </div>
+
       <div className="flex justify-between">
         <div className="h-36 w-36 bg-white border border-gray-200 rounded-xl flex flex-col items-center justify-center shadow-lg p-2 space-y-2">
           <img
-            src="/image/gm1.jpg"
+            src={`${BASE}image/gm1.jpg`}
             alt="Menu Icon"
             className="w-20 h-20 rounded-2xl"
           />
-          <a href="/camera" className="w-full">
-            <button className="w-full py-1 rounded-2xl text-[12px] bg-pink-300 text-white font-semibold hover:bg-pink-400 transition">
-              Camera Game
-            </button>
-          </a>
+          <button
+            onClick={() => navigate("/camera")}
+            className="w-full py-1 rounded-2xl text-[12px] bg-pink-300 text-white font-semibold hover:bg-pink-400 transition"
+          >
+            Camera Game
+          </button>
         </div>
 
         <div className="h-36 w-36 bg-white border border-gray-200 rounded-xl flex flex-col items-center justify-center shadow-lg p-2 space-y-2">
           <img
-            src="/image/gm2.jpg"
+            src={`${BASE}image/gm2.jpg`}
             alt="Menu Icon"
             className="w-20 h-20 rounded-2xl object-cover"
           />
-          <a href="/TTC" className="w-full">
-            <button className="w-full py-1 rounded-2xl text-[12px] bg-pink-300 text-white font-semibold hover:bg-pink-400 transition">
-              TIC TAC WLE
-            </button>
-          </a>
+          <button
+            onClick={() => navigate("/TTC")}
+            className="w-full py-1 rounded-2xl text-[12px] bg-pink-300 text-white font-semibold hover:bg-pink-400 transition"
+          >
+            TIC TAC WLE
+          </button>
         </div>
       </div>
     </div>
