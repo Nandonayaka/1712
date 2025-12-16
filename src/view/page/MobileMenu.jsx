@@ -14,6 +14,7 @@ export default function MobileDashboard() {
     const msg =
       "Selamat ulang tahun sayanggg! Semoga makin sukses!, ini hadiah kecil dari aku.., cobain deh game yang aku buat iseng-iseng aja hehe :p";
     let i = 0;
+
     const interval = setInterval(() => {
       setTyped(msg.slice(0, i));
       i++;
@@ -114,6 +115,7 @@ export default function MobileDashboard() {
         </div>
       </div>
 
+      {/* Menu */}
       <div className="flex justify-between">
         <div className="h-36 w-36 bg-white border border-gray-200 rounded-xl flex flex-col items-center justify-center shadow-lg p-2 space-y-2">
           <img
