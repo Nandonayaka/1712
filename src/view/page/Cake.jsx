@@ -1,6 +1,7 @@
 "use client";
 import { Pause, Play } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function BirthdayCake() {
   const [blown, setBlown] = useState(false);
@@ -9,6 +10,13 @@ export default function BirthdayCake() {
   const audioRef = useRef(null);
   const [playing, setPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
+  const navigate = useNavigate();
+
+
+
+
+  const BASE = import.meta.env.BASE_URL;
+
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -54,7 +62,8 @@ export default function BirthdayCake() {
   return (
     <>
       <div className="min-h-screen bg-pink-100 flex flex-col items-center justify-center relative overflow-hidden">
-        <audio ref={audioRef} src="/audio/01.mp3" loop />
+        <audio ref={audioRef} src={`${BASE}audio/01.mp3`} loop />
+
 
         {[...Array(40)].map((_, i) => (
           <div
@@ -160,7 +169,7 @@ export default function BirthdayCake() {
               </button>
 
               <button
-                onClick={() => (window.location.href = "/menu")}
+                onClick={() => navigate("/menu")}
                 className="w-full py-2 bg-pink-500 text-white rounded-lg font-semibold"
               >
                 Lanjut
