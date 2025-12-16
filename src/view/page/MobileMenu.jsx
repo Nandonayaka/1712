@@ -59,7 +59,7 @@ export default function MobileDashboard() {
           <p className="text-sm opacity-90">Semoga harimu menyenangkan 🎂</p>
         </div>
         <img
-          src={`${BASE}image/balon.png`}
+          src={`${BASE}image/boom/balon.png`}
           alt="balloon"
           className="h-28 w-auto object-contain opacity-95 drop-shadow-md balloon-float"
         />
@@ -117,7 +117,7 @@ export default function MobileDashboard() {
       <div className="flex justify-between">
         <div className="h-36 w-36 bg-white border border-gray-200 rounded-xl flex flex-col items-center justify-center shadow-lg p-2 space-y-2">
           <img
-            src={`${BASE}image/gm1.jpg`}
+            src={`${BASE}image/boom/gm1.jpg`}
             alt="Menu Icon"
             className="w-20 h-20 rounded-2xl"
           />
@@ -131,12 +131,12 @@ export default function MobileDashboard() {
 
         <div className="h-36 w-36 bg-white border border-gray-200 rounded-xl flex flex-col items-center justify-center shadow-lg p-2 space-y-2">
           <img
-            src={`${BASE}image/gm2.jpg`}
+            src={`${BASE}image/boom/gm2.jpg`}
             alt="Menu Icon"
             className="w-20 h-20 rounded-2xl object-cover"
           />
           <button
-            onClick={() => navigate("/TTC")}
+            onClick={() => navigate("/ttc")}
             className="w-full py-1 rounded-2xl text-[12px] bg-pink-300 text-white font-semibold hover:bg-pink-400 transition"
           >
             TIC TAC WLE

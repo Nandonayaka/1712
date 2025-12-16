@@ -16,7 +16,7 @@ export const homeroute = [
       { path: "home", element: <MainHome /> },
       { path: "cake", element: <CakeCard /> },
       { path: "success", element: <BirthdayCard /> },
-      { path: "TTC", element: <TicTacToe /> },
+      { path: "ttc", element: <TicTacToe /> },
       { path: "camera", element: <RomanticCamera /> },
       { path: "menu", element: <MobileDashboard /> },
     ],
