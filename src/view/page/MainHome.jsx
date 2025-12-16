@@ -20,7 +20,7 @@ export default function App() {
 
   const enter = () => {
     if (input === CORRECT_CODE) {
-      navigate("/success");   // ⬅ pindah halaman
+      navigate("/menu");   // ⬅ pindah halaman
     } else {
       setStatus("ERROR");
       setInput("");
@@ -28,7 +28,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-pink-100 to-white p-4">
+    <div className="min-h-screen flex items-center justify-center  p-4">
 
       <div className="w-full max-w-md bg-white/60 backdrop-blur-xl rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.1)] p-6 border border-pink-100">
 
