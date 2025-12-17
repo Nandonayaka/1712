@@ -51,7 +51,7 @@ export default function MemeInteraction() {
             onClick={startCamera}
             className="mt-4 w-48 bg-blue-600 text-white py-2 rounded-xl shadow active:scale-95"
           >
-            Hidupkan Kamera
+            Hidupkan Kamera..
           </button>
 
           <button
